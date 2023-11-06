@@ -1,4 +1,6 @@
-#include <python.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <Python.h>
 
 /**
  * print_python_list_info - print standard about python list.
@@ -23,4 +25,3 @@ void print_python_list_info(PyObject *p)
       printf("%s\n", PyTYBE(obj)->tp_name);
     }
 }
-      
