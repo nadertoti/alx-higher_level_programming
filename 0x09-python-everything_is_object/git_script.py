@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import subprocess
+
+def git_add_commit_push(message):
+    try:
+        # Git add
+        subprocess.run(["git", "add", "."])
+
+        # Git commit
+        subprocess.run(["git", "commit", "-m", message])
+
+        # Git push
+        subprocess.run(["git", "push"])
+
+        print("Changes added, committed, and pushed successfully.")
+    except Exception as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    commit_message = "done"  # You can change this message as needed
+    git_add_commit_push(commit_message)
