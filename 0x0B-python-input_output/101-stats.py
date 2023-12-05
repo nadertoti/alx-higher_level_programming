@@ -1,25 +1,25 @@
 #!/usr/bin/python3
-"""script that reads stdin line"""
+"""Module for last task"""
 
 
 from sys import stdin
 
 
 status_codes = {
-    '200': 0,
-    '301': 0,
-    '400': 0,
-    '401': 0,
-    '403': 0,
-    '404': 0,
-    '405': 0,
-    '500': 0,
-    }
+        '200': 0,
+        '301': 0,
+        '400': 0,
+        '401': 0,
+        '403': 0,
+        '404': 0,
+        '405': 0,
+        '500': 0,
+        }
 
 total_size = i = 0
 
 def spliter():
-    """function prints the status in statistical form."""
+    """prints the status in statistical form"""
     print(f'File size: {total_size}')
     for key, value in sorted(status_codes.items()):
         if value > 0:
