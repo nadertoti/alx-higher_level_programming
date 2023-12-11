@@ -98,3 +98,8 @@ class Rectangle(Base):
             self.__improvment(*args)
         elif kwargs:
             self.__improvment(**kwargs)
+    
+    def my_dict(self):
+        """outputs dict of the class."""
+        return {"id": self.id, "width": self.__width, "height": self.__height,
+                "x": self.__x, "y": self.__y}
