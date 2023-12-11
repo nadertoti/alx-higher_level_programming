@@ -91,3 +91,10 @@ class Rectangle(Base):
             self.x = x
         if y is not None:
             self.y = y
+    
+    def update(self, *args, **kwargs):
+        """update using no keywards and args"""
+        if args:
+            self.__update(*args)
+        elif kwargs:
+            self.__update(**kwargs)
