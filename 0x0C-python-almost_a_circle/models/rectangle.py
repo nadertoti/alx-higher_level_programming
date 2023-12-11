@@ -5,6 +5,7 @@ from models.base import Base
 
 class Rectangle(Base):
     """A rectangle class."""
+    
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constroctor."""
         super().__init__(id)
@@ -15,7 +16,7 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """height of the rectangle."""
+        """width of the rectangle."""
         return self.__width
     
     @width.setter
@@ -33,7 +34,7 @@ class Rectangle(Base):
 
     @property
     def x(self):
-        """height of the rectangle."""
+        """x of the rectangle."""
         return self.__x
     
     @x.setter
@@ -42,7 +43,7 @@ class Rectangle(Base):
     
     @property
     def y(self):
-        """height of the rectangle."""
+        """y of the rectangle."""
         return self.__y
     
     @y.setter
