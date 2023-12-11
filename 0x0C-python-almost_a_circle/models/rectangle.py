@@ -50,4 +50,5 @@ class Rectangle(Base):
     
     @y.setter
     def y(self, value):
+        """height of the rectangle."""
         self.__y = value
