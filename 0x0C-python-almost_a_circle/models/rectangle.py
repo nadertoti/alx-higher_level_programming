@@ -95,6 +95,6 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """update using no keywards and args"""
         if args:
-            self.__update(*args)
+            self.__improvment(*args)
         elif kwargs:
-            self.__update(**kwargs)
+            self.__improvment(**kwargs)
