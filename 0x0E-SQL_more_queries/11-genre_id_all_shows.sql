@@ -1,6 +1,5 @@
 -- list all shows in a table
-SELECT b.title, a.genres
-FROM tv_show_genres a
-LEFT JOIN tv_shows b
-ON a.show_id = b.id OR NULL
-ORDER BY b.title, a.genre_id ASC;
+SELECT tv_shows.title, IFNULL(tv_show_genres.genre_id, 'NULL') AS genre_id
+FROM hbtn_0d_tvshows.tv_shows
+LEFT JOIN hbtn_0d_tvshows.tv_show_genres ON tv_shows.id = tv_show_genres.show_id
+ORDER BY tv_shows.title ASC, tv_show_genres.genre_id ASC;
